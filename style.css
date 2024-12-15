@@ -1,0 +1,229 @@
+:root {
+  --color-bg-primary: #1a1a1a;
+  --color-bg-secondary: #2e2e2e;
+  --color-bg-card: #333333;
+  --color-text-primary: #e1e1e1;
+  --color-text-secondary: #939393;
+  --color-text-accent: #ffffff;
+  --color-accent-primary: #8e3b46;
+  --color-accent-secondary: #e0777d;
+  --color-muted: #477890;
+  --color-shadow: rgba(0, 0, 0, 0.5);
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--color-text-secondary);
+  background-color: var(--color-bg-primary);
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+h1,
+h2,
+h3 {
+  color: var(--color-text-primary);
+  font-family: "Playfair Display", serif;
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: var(--color-text-primary);
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+a:hover {
+  color: var(--color-accent-primary);
+}
+section {
+  margin-bottom: 2rem;
+}
+
+.experience-heading-two,
+.portfolio-heading-two,
+.skills-heading-two,
+.thoughts-heading-two,
+.contact-heading-two {
+  color: var(--color-text-secondary);
+}
+.about-heading,
+.experience-heading,
+.skills-heading,
+.thoughts-heading,
+.contact-heading {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+.portfolio-more-link,
+.experience-more-link,
+.thoughts-more-link {
+  text-align: right;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--color-accent-primary);
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin-left: 75%;
+}
+.portfolio-more-link:hover,
+.experience-more-link:hover,
+.thoughts-more-link:hover {
+  background-color: var(--color-accent-secondary);
+  color: var(--color-text-accent);
+}
+.experience-card,
+.thoughts-card {
+  transition: var(--color-bg-card) 0.4s ease;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+.experience-card:hover,
+.thoughts-card:hover {
+  background-color: var(--color-bg-card);
+}
+.experience-card:last-of-type,
+.thoughts-card:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.navbar {
+  background-color: var(--color-bg-secondary);
+  width: 100%;
+  display: flex;
+  margin-bottom: 2rem;
+}
+.navbar-list {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.home-intro {
+  background-color: var(--color-text-accent);
+  border-radius: 0.5rem;
+  padding: 2rem 1rem 2.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.home-hero {
+  width: 250px;
+  height: 200px;
+  border-radius: 5%;
+  object-fit: cover;
+  line-height: 0.75rem;
+  margin-bottom: 2rem;
+}
+.home-title {
+  color: var(--color-bg-secondary);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.home-description {
+  color: var(--color-text-secondary);
+}
+
+.about-card {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+.skills-heading {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+.skills-item {
+  color: var(--color-text-primary);
+  background-color: var(--color-accent-primary);
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+  width: 5rem;
+}
+
+.portfolio-image {
+  width: 100%;
+  height: auto;
+  max-width: 100px;
+}
+.portfolio-heading {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+.portfolio-card {
+  background-color: var(--color-bg-card);
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+.portfolio-section,
+.thoughts-section {
+  margin-bottom: 2.8rem;
+}
+
+.thoughts-timeframe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form-sect {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.form-label {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+.form-input,
+.form-textarea {
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: var(--color-bg-card);
+  border: 1px solid transparent;
+  color: var(--color-text-primary);
+}
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--color-accent-primary);
+}
+.form-button {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-accent-primary);
+  color: var(--color-text-accent);
+  border: none;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: var(--color-accent-primary) 0.3s ease;
+}
+.form-button:hover {
+  background-color: var(--color-accent-secondary); /* Hover effect */
+}
