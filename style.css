@@ -11,7 +11,7 @@
   --color-shadow: rgba(0, 0, 0, 0.5);
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   color: var(--color-text-secondary);
   background-color: var(--color-bg-primary);
   margin: 0 auto;
@@ -39,25 +39,26 @@ section {
   margin-bottom: 2rem;
 }
 
+.contact-heading-two,
 .experience-heading-two,
 .portfolio-heading-two,
 .skills-heading-two,
-.thoughts-heading-two,
-.contact-heading-two {
+.thoughts-heading-two {
   color: var(--color-text-secondary);
 }
 .about-heading,
+.contact-heading,
 .experience-heading,
+.portfolio-heading,
 .skills-heading,
-.thoughts-heading,
-.contact-heading {
+.thoughts-heading {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 2rem;
   text-transform: uppercase;
 }
-.portfolio-more-link,
 .experience-more-link,
+.portfolio-more-link,
 .thoughts-more-link {
   text-align: right;
   padding: 0.5rem 1.5rem;
@@ -67,8 +68,8 @@ section {
   transition: all 0.3s ease;
   margin-left: 75%;
 }
-.portfolio-more-link:hover,
 .experience-more-link:hover,
+.portfolio-more-link:hover,
 .thoughts-more-link:hover {
   background-color: var(--color-accent-secondary);
   color: var(--color-text-accent);
@@ -87,6 +88,10 @@ section {
 .experience-card:last-of-type,
 .thoughts-card:last-of-type {
   margin-bottom: 2rem;
+}
+.portfolio-section,
+.thoughts-section {
+  margin-bottom: 2.8rem;
 }
 
 .navbar {
@@ -114,7 +119,6 @@ section {
   height: 200px;
   border-radius: 5%;
   object-fit: cover;
-  line-height: 0.75rem;
   margin-bottom: 2rem;
 }
 .home-title {
@@ -142,7 +146,6 @@ section {
   flex-wrap: wrap;
   gap: 1rem;
   padding: 0 1rem;
-  margin: 0 auto;
 }
 .skills-item {
   color: var(--color-text-primary);
@@ -157,12 +160,6 @@ section {
   height: auto;
   max-width: 100px;
 }
-.portfolio-heading {
-  text-align: center;
-  font-size: 3rem;
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-}
 .portfolio-card {
   background-color: var(--color-bg-card);
   display: flex;
@@ -170,10 +167,6 @@ section {
   padding: 1rem;
   border-radius: 0.5rem;
   margin-bottom: 2rem;
-}
-.portfolio-section,
-.thoughts-section {
-  margin-bottom: 2.8rem;
 }
 
 .thoughts-timeframe {
@@ -211,7 +204,7 @@ section {
 }
 .form-input:focus,
 .form-textarea:focus {
-  outline: none;
+  outline: 0;
   border-color: var(--color-accent-primary);
 }
 .form-button {
@@ -225,5 +218,122 @@ section {
   transition: var(--color-accent-primary) 0.3s ease;
 }
 .form-button:hover {
-  background-color: var(--color-accent-secondary); /* Hover effect */
+  background-color: var(--color-accent-secondary);
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: 3.5rem;
+  }
+  section {
+    margin-bottom: 4rem;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  .home-section {
+    align-self: start;
+    position: sticky;
+    top: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 0;
+  }
+
+  .about-heading,
+  .contact-heading,
+  .experience-heading,
+  .portfolio-heading,
+  .skills-heading,
+  .thoughts-heading {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+  .experience-more-link,
+  .portfolio-more-link,
+  .thoughts-more-link {
+    padding: 1rem 1.8rem;
+    font-size: 1.3rem;
+  }
+  .experience-card,
+  .portfolio-card,
+  .thoughts-card {
+    padding: 2rem;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+  }
+  .experience-card:last-of-type,
+  .thoughts-card:last-of-type {
+    margin-bottom: 4rem;
+  }
+  .portfolio-section,
+  .thoughts-section {
+    margin-bottom: 2.8rem;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar {
+    width: 40%;
+    justify-content: space-evenly;
+    margin-bottom: 4rem;
+  }
+  .navbar-list {
+    gap: 1.5rem;
+  }
+
+  .home-intro {
+    padding: 2rem 3rem;
+    gap: 2rem;
+    height: 60%;
+  }
+  .home-hero {
+    width: 250px;
+    height: 300px;
+    margin-bottom: 2rem;
+  }
+  .home-title {
+    font-weight: bolder;
+    font-size: 1.8rem;
+  }
+  .home-description {
+    font-size: 1.4rem;
+  }
+
+  .about-card {
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+  }
+  .skills-heading {
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+  }
+  .skills-list {
+    gap: 1.5rem;
+    padding: 1rem 1.1rem;
+  }
+  .skills-item {
+    padding: 1rem 1.5rem;
+    width: 5rem;
+    font-size: 1.2rem;
+  }
+
+  .portfolio-image {
+    max-width: 200px;
+  }
 }
