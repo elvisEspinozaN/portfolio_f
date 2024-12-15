@@ -40,58 +40,20 @@ section {
 }
 
 .contact-heading-two,
-.experience-heading-two,
-.portfolio-heading-two,
-.skills-heading-two,
-.thoughts-heading-two {
+.skills-heading-two {
   color: var(--color-text-secondary);
 }
 .about-heading,
 .contact-heading,
-.experience-heading,
-.portfolio-heading,
-.skills-heading,
-.thoughts-heading {
+.skills-heading {
   font-size: 3rem;
   text-align: center;
-  margin-bottom: 2rem;
   text-transform: uppercase;
 }
-.experience-more-link,
-.portfolio-more-link,
-.thoughts-more-link {
-  text-align: right;
-  padding: 0.5rem 1.5rem;
-  background-color: var(--color-accent-primary);
-  border-radius: 0.5rem;
-  text-align: center;
-  transition: all 0.3s ease;
-  margin-left: 75%;
-}
-.experience-more-link:hover,
-.portfolio-more-link:hover,
-.thoughts-more-link:hover {
-  background-color: var(--color-accent-secondary);
-  color: var(--color-text-accent);
-}
-.experience-card,
-.thoughts-card {
-  transition: var(--color-bg-card) 0.4s ease;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
-}
-.experience-card:hover,
-.thoughts-card:hover {
-  background-color: var(--color-bg-card);
-}
-.experience-card:last-of-type,
-.thoughts-card:last-of-type {
-  margin-bottom: 2rem;
-}
-.portfolio-section,
-.thoughts-section {
-  margin-bottom: 2.8rem;
+.about-card,
+.interests-card,
+.goals-card {
+  padding: 1.5rem;
 }
 
 .navbar {
@@ -130,11 +92,10 @@ section {
   color: var(--color-text-secondary);
 }
 
-.about-card {
-  text-align: center;
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
+.about-description {
+  line-height: 1.6;
 }
+
 .skills-heading {
   text-align: center;
   font-size: 3rem;
@@ -148,31 +109,15 @@ section {
   padding: 0 1rem;
 }
 .skills-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
   color: var(--color-text-primary);
   background-color: var(--color-accent-primary);
   padding: 0.5rem 1.5rem;
-  border-radius: 1rem;
-  width: 5rem;
-}
-
-.portfolio-image {
-  width: 100%;
-  height: auto;
-  max-width: 100px;
-}
-.portfolio-card {
-  background-color: var(--color-bg-card);
-  display: flex;
-  gap: 1rem;
-  padding: 1rem;
   border-radius: 0.5rem;
-  margin-bottom: 2rem;
-}
-
-.thoughts-timeframe {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 5rem;
 }
 
 .contact-form {
@@ -254,33 +199,14 @@ section {
 
   .about-heading,
   .contact-heading,
-  .experience-heading,
-  .portfolio-heading,
-  .skills-heading,
-  .thoughts-heading {
+  .skills-heading {
     font-size: 4rem;
     margin-bottom: 3rem;
   }
-  .experience-more-link,
-  .portfolio-more-link,
-  .thoughts-more-link {
-    padding: 1rem 1.8rem;
-    font-size: 1.3rem;
-  }
-  .experience-card,
-  .portfolio-card,
-  .thoughts-card {
-    padding: 2rem;
-    margin-bottom: 3rem;
-    font-size: 1.2rem;
-  }
-  .experience-card:last-of-type,
-  .thoughts-card:last-of-type {
-    margin-bottom: 4rem;
-  }
-  .portfolio-section,
-  .thoughts-section {
-    margin-bottom: 2.8rem;
+  .about-card,
+  .interests-card,
+  .goals-card {
+    font-size: 1.5rem;
   }
 
   header {
@@ -315,10 +241,6 @@ section {
     font-size: 1.4rem;
   }
 
-  .about-card {
-    font-size: 1.5rem;
-    margin-bottom: 4rem;
-  }
   .skills-heading {
     font-size: 3.5rem;
     margin-bottom: 4rem;
@@ -331,9 +253,5 @@ section {
     padding: 1rem 1.5rem;
     width: 5rem;
     font-size: 1.2rem;
-  }
-
-  .portfolio-image {
-    max-width: 200px;
   }
 }
