@@ -20,7 +20,7 @@
       <header>
         <nav class="navbar">
           <ul class="navbar-list">
-            <a href="#home" class="navbar-link">Home</a>
+            <a href="./index.html" class="navbar-link">Home</a>
             <a href="./about.html" class="navbar-link">About</a>
             <a href="#portfolio" class="navbar-link">Portfolio</a>
             <a href="#experience" class="navbar-link">Experience</a>
@@ -31,11 +31,13 @@
         <!-- home section -->
         <section id="home" class="home-section" aria-labelledby="home-title">
           <div class="home-intro">
-            <img
-              src="https://media.licdn.com/dms/image/v2/C4D03AQFPsTkcF1hLuQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1646496725520?e=1739404800&v=beta&t=3yodATZ2Vpfo16xb5VSC1i1QSxIIzEg-wUSz95ZQiJU"
-              alt="Profile picture for Elvis Espinoza"
-              class="home-hero"
-            />
+            <a href="https://www.linkedin.com/in/elvis-espinoza/">
+              <img
+                src="https://media.licdn.com/dms/image/v2/C4D03AQFPsTkcF1hLuQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1646496725520?e=1739404800&v=beta&t=3yodATZ2Vpfo16xb5VSC1i1QSxIIzEg-wUSz95ZQiJU"
+                alt="Profile picture for Elvis Espinoza"
+                class="home-hero"
+              />
+            </a>
             <h1 class="home-title">Elvis Espinoza</h1>
             <p class="home-description">
               Aspiring Fullstack Software Engineer | Building My Path Into Tech
@@ -88,7 +90,12 @@
               <div class="portfolio-details">
                 <h3 class="portfolio-title">TBD</h3>
                 <p class="portfolio-description">Coming soon...</p>
-                <a href="" class="portfolio-link">Live Demo</a>
+                <a
+                  href="https://github.com/elvisEspinozaN"
+                  class="portfolio-link"
+                  target="_blank"
+                  >Live Demo</a
+                >
               </div>
             </article>
             <a
@@ -128,7 +135,7 @@
               >
             </article>
             <a
-              href="./portfolio.html"
+              href="./portfolio.html#experience"
               class="experience-more-link"
               aria-label="View more experience details"
               >More</a
@@ -159,9 +166,10 @@
             </article>
 
             <a
-              href="#experience"
+              href="https://www.linkedin.com/in/elvis-espinoza/"
               class="thoughts-more-link"
               aria-label="View more personal reads"
+              target="_blank"
               >More</a
             >
           </section>
@@ -175,7 +183,12 @@
               Contact <br />
               <span class="contact-heading-two">Me</span>
             </h2>
-            <form action="#" method="post" class="contact-form">
+            <form
+              action="mailto:elvis.espinoza.navarrete@outlook.com"
+              method="post"
+              enctype="text/plain"
+              class="contact-form"
+            >
               <div class="form-sect">
                 <div class="form-group">
                   <label for="name" class="form-label">Name:</label>

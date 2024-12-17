@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/portfolio.css" />
+    <title>Elvis E. | Work Showcase</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <a href="./index.html" class="navbar-link">Home</a>
+            <a href="./about.html" class="navbar-link">About</a>
+            <a href="#portfolio" class="navbar-link">Portfolio</a>
+            <a href="#experience" class="navbar-link">Experience</a>
+          </ul>
+        </nav>
+      </header>
+      <div class="container">
+        <!-- home section -->
+        <section id="home" class="home-section" aria-labelledby="home-title">
+          <div class="home-intro">
+            <a href="https://www.linkedin.com/in/elvis-espinoza/">
+              <img
+                src="https://media.licdn.com/dms/image/v2/C4D03AQFPsTkcF1hLuQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1646496725520?e=1739404800&v=beta&t=3yodATZ2Vpfo16xb5VSC1i1QSxIIzEg-wUSz95ZQiJU"
+                alt="Profile picture for Elvis Espinoza"
+                class="home-hero"
+              />
+            </a>
+            <h1 class="home-title">Elvis Espinoza</h1>
+            <p class="home-description">
+              Aspiring Fullstack Software Engineer | Building My Path Into Tech
+            </p>
+          </div>
+        </section>
+        <div class="content">
+          <!-- portfolio section -->
+          <section
+            id="portfolio"
+            class="portfolio-section"
+            aria-labelledby="portfolio-title"
+          >
+            <h2 id="portfolio-title" class="portfolio-heading">
+              Latest <br />
+              <span class="portfolio-heading-two">Work</span>
+            </h2>
+            <article class="portfolio-card">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1721856199545-47030b3094a2?q=80&w=1228&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Screenshot of Project 1"
+                class="portfolio-image"
+              />
+              <div class="portfolio-details">
+                <h3 class="portfolio-title">TBD</h3>
+                <p class="portfolio-description">Coming soon...</p>
+                <a
+                  href="https://github.com/elvisEspinozaN"
+                  class="portfolio-link"
+                  target="_blank"
+                  >Live Demo</a
+                >
+              </div>
+            </article>
+          </section>
+          <!-- experience section -->
+          <section
+            id="experience"
+            class="experience-section"
+            aria-labelledby="experience-title"
+          >
+            <h2 id="experience-title" class="experience-heading">
+              Career <br />
+              <span class="experience-heading-two">Highlights</span>
+            </h2>
+            <article class="experience-card">
+              <h3 class="experience-title">FedEx Ground</h3>
+              <p class="experience-description">
+                Led training programs for over 100 employees, improving
+                operational efficiency by 25% and reducing errors by 20%.
+                Managed a team of 20+, fostering collaboration and achieving a
+                40% reduction in workplace incidents.
+              </p>
+              <time datetime="2019-01" class="experience-time"
+                >2019 - Present</time
+              >
+            </article>
+            <article class="experience-card">
+              <h3 class="experience-title">Frontend Mentor</h3>
+              <p class="experience-description">
+                Developed responsive web projects focused on user-centric design
+                and accessibility. Implemented clean, modular code for
+                real-world challenges to improve coding efficiency.
+              </p>
+              <time datetime="2022-01" class="experience-time"
+                >2022 - Present</time
+              >
+            </article>
+            <article class="experience-card">
+              <h3 class="experience-title">GenSpark</h3>
+              <p class="experience-description">
+                Built and deployed RESTful APIs using Java Spring Boot and
+                MySQL, optimizing data performance. Enhanced front-end usability
+                with React and AWS, improving user engagement and boosting
+                application speed.
+              </p>
+              <time datetime="2022-01" class="experience-time"
+                >2022 - Present</time
+              >
+            </article>
+          </section>
+          <!-- contact section -->
+          <section
+            id="contact"
+            class="contact-section"
+            aria-labelledby="contact-title"
+          >
+            <h2 id="contact-title" class="contact-heading">
+              Contact <br />
+              <span class="contact-heading-two">Me</span>
+            </h2>
+            <form
+              action="mailto:elvis.espinoza.navarrete@outlook.com"
+              method="post"
+              enctype="text/plain"
+              class="contact-form"
+            >
+              <div class="form-sect">
+                <div class="form-group">
+                  <label for="name" class="form-label">Name:</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-input"
+                    required
+                    aria-required="true"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Email:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-input"
+                    required
+                    aria-required="true"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Message:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  class="form-textarea"
+                  required
+                  aria-required="true"
+                ></textarea>
+              </div>
+              <button type="submit" class="form-button">Send</button>
+            </form>
+          </section>
+        </div>
+      </div>
+
+      <footer role="contentinfo">
+        <p>&copy; 2024 Elvis Espinoza. All rights reserved.</p>
+      </footer>
+    </main>
+  </body>
+</html>
