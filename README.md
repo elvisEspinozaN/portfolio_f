@@ -15,12 +15,12 @@ This is a solution to the Personal Website Project, a foundational exercise as p
 
 ### Screenshot
 
-![Mobile screenshot]()
-![Desktop screenshot]()
+![Mobile screenshot](https://i.imgur.com/Y8DCXC4.png)
+![Desktop screenshot](https://i.imgur.com/ckKUGlJ.png)
 
 ### Links
 
-- [Live site URL]()
+- [Live site URL](https://elvisespinozan.github.io/portfolio_f/)
 
 ## My process
 
