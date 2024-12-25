@@ -238,3 +238,32 @@ section {
     border-radius: 0.25rem;
   }
 }
+
+@media (min-width: 1440px) {
+  body {
+    padding: 4rem;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .home-hero {
+    width: 300px;
+    height: 350px;
+  }
+  .home-title {
+    font-size: 2.2rem;
+    font-weight: bolder;
+  }
+  .home-description {
+    font-size: 1.4rem;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-size: 2rem;
+  }
+}
