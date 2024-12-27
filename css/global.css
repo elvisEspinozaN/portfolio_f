@@ -59,7 +59,8 @@ section {
 .experience-heading,
 .portfolio-heading,
 .skills-heading,
-.thoughts-heading {
+.thoughts-heading,
+.thank-you-heading {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 2rem;
@@ -70,7 +71,8 @@ section {
 .experience-heading-two,
 .portfolio-heading-two,
 .skills-heading-two,
-.thoughts-heading-two {
+.thoughts-heading-two,
+.thank-you-heading-two {
   color: var(--color-text-secondary);
 }
 
